@@ -23,9 +23,8 @@
       <img src="images/natthanicha.jpg" />
       </div>
       <div class="card-contact">
-      <H4>Personal Information</H4>
+      <h4>Personal Information</h4>
       <ul>
-        <!-- <li>Email : natthanicha@kkumail.com</li> -->
         <li>Genger : Female</li>
         <li>Date of Birth : November 2, 1999</li>
         <li>Age : 20</li>
@@ -34,7 +33,7 @@
 
       <hr/>
       <div>
-        <H4>Skills</H4>
+        <h4>Skills</h4>
 
         <p>Python</p>
         <div class="level">
@@ -63,27 +62,27 @@
     </div>
     <div class="about-me">
       <div class="education">
-        <H4>Education</H4>
+        <h4>Education</h4>
       </div>
       <div class="college">
-        <H6>Primary School </H6>
+        <h6>Primary School </h6>
         <li>Anuban Ubonratchathani School</li>
-        <H6>Secondary School </H6>
+        <h6>Secondary School </h6>
         <li>Benchamamaharat School</li>
-        <H6>Khon Kean University</H6>
+        <h6>Khon Kean University</h6>
         <li>Computer Enginering</li>
       </div>
 
 
     </div>
     
-  <div class="social">
+    <div class="social">
     <h4>My contact</h4>
     <a href="https://www.facebook.com/eve.nutthanicha/">Facebook : eve nutthanicha</a>
     <p>Instragram : eve.natthanicha</p>
     <p>E-mail : natthanichaa@kkumail.com</p>
- </div>
- <div id="contact-me">
+  </div>
+    <div id="contact-me">
   <h2>Contact</h2>
   <form>
       <div class="input">
@@ -95,16 +94,13 @@
       <br>
       <textarea rows="5"></textarea>
       <div class="button">
-          <button type="submit" class="submit">Send</button>
+          <button type="submit" class="submit" id="submit">Send</button>
           <button type="reset" class="reset">Clear</button>
       </div>
   </form>
 </div>
 
-
-
-
-<div class="language">
+    <div class="language">
   <h4>My Language
   </h4><table class="block">
     <tr>
@@ -119,7 +115,18 @@
         <td >Thai</td>
         <td>4</td>
     </tr>
-</div>
+    </div>
+  
+
 
   </body>
+  <script>
+    console.log("kopiopip");
+    const submit = document.getElementById('submit');
+  console.log(submit);
+  submit.addEventListener('click', (e) => {
+      e.preventDefault();
+      let a = alert('submit ?');
+  });
+  </script>
 </html>
